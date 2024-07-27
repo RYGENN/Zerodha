@@ -10,3 +10,18 @@
     margin-top: 5px;
 }
 
+.foot h1{
+    cursor: pointer;
+    &:hover{
+        color: #2164b7;
+    }
+}
+
+.foot2 p a{
+    color:#2e83eb;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover{
+        color: rgb(45, 43, 43);
+    }
+}

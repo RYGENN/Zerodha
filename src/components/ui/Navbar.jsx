@@ -1,10 +1,10 @@
-import image from "../../assets/zero.png";
+import image from "../../assets/ZerodhaLogo.png";
 
 const Navbar = () => {
   return (
     <nav className=" flex justify-between items-center p-5 shadow-sm ">
       <div className=" ">
-        <img src={image} alt="logo" className="w-21 h-10" />
+        <img src={image} alt="logo" className="w-1/4 pl-3" />
       </div>
       <div className="w-1/2 flex justify-around  ">
         <ul className=" text-gray-600 flex gap-10 md:ml-8 items-center ">
