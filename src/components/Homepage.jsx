@@ -17,16 +17,16 @@ const Homepage = () => {
 
       <main>
         <section className="landing  flex flex-col justify-center items-center mb-28">
-          <div className=" w-3/6 h-fit m-10 ">
+          <div className="w-2/3 md:w-3/6 h-fit md:m-10 ">
             <img src={landing}></img>
           </div>
-          <div className=" mt-4">
+          <div className=" flex text-center mt-4">
             <h1 className=" text-bold text-5xl font-semibold text-gray-700 mb-3 ">
               Invest in everything
             </h1>
           </div>
-          <div>
-            <h1 className=" text-bold text-xl mb-10 ">
+          <div className="flex justify-center items-center w-full mb-10 text-center">
+            <h1 className="text-bold text-xl  ">
               Online platform to invest in stocks, derivatives, mutual funds,
               and more
             </h1>
@@ -36,13 +36,13 @@ const Homepage = () => {
           </button>
         </section>
 
-        <section className="marketing ">
-          <div className=" grid grid-cols-4 gap-6 p-5">
-            <div className=" col-span-2 p-9 mr-9">
+        <section className="marketing flex flex-col ">
+          <div className=" grid grid-flow-row md:grid md:grid-cols-2  gap-6 p-5">
+            <div className="p-9 mr-9">
               <img src={broker}></img>
             </div>
 
-            <div className=" col-span-2 flex flex-col p-6 ">
+            <div className="flex flex-col p-6 ">
               <h1 className=" font-medium text-4xl text-gray-700 mb-6">
                 Largest stock broker in India
               </h1>
@@ -71,9 +71,9 @@ const Homepage = () => {
           </div>
         </section>
 
-        <section className="px-10 py-14">
-          <div className="grid grid-cols-7 gap-5 p-2">
-            <div className="flex flex-col col-span-3 gap-7 ">
+        <section className=" md:px-10 py-14">
+          <div className="grid grid-flow-row md:grid md:grid-cols-7 gap-5 p-2">
+            <div className="flex flex-col col-span-3  gap-7 ml-7 md:ml-0">
               <div>
                 <h1 className=" font-semibold text-4xl text-gray-600 py-1 mb-4">
                   Trust with confidence
@@ -173,7 +173,7 @@ const Homepage = () => {
 
         <section className="pricing mb-5">
           <div className=" pb-14">
-            <div className="grid grid-cols-5 gap-5 px-16 mt-8">
+            <div className="grid md:grid-cols-5 gap-5 md:px-16 mt-8">
               <div className=" col-span-2 flex flex-col gap-5 p-4 mt-7">
                 <h1 className=" text-4xl text-gray-700 font-medium">
                   Unbeatable pricing
@@ -201,7 +201,7 @@ const Homepage = () => {
                   </svg>
                 </a>
               </div>
-              <div className="col-span-3 grid grid-cols-2 p-5 m-5">
+              <div className="col-span-3 md:grid md:grid-cols-2 p-5 m-5">
                 <div className=" border border-r-0 border-gray-200  rounded">
                   <Card
                     title="₹0"
@@ -217,8 +217,8 @@ const Homepage = () => {
         </section>
 
         <section className="varsity">
-          <div className=" grid grid-cols-2 px-3 py-7 pb-8 gap-5  ">
-            <div className=" col-span-1">
+          <div className=" grid md:grid-cols-2 px-3 py-7 pb-8 gap-5  ">
+            <div className=" col-span-1 flex justify-center md:float-none md:justify-normal">
               <div className=" size-3/4 flex items-center justify-center ml-5">
                 <img src={varsity} />
               </div>
@@ -280,7 +280,7 @@ const Homepage = () => {
           </div>
         </section>
 
-        <section className="flex flex-col justify-center items-center gap-6 text-gray-700 my-20">
+        <section className="flex flex-col justify-center items-center gap-6 text-gray-700 my-20 text-center">
           <div>
             <h1 className="text-4xl font-semibold">Open a Zerodha account</h1>
           </div>
@@ -299,15 +299,17 @@ const Homepage = () => {
       </main>
 
       <footer className=" bg-zinc-50">
-        <section className="grid grid-cols-4 gap-4 p-8">
+        <section className="grid md:grid-cols-4 gap-6 md:gap-4 p-8">
           <div className="logo flex flex-col gap-5">
-            <div>
+            <div className="flex justify-center md:flex-none md:justify-normal">
               <img src={zerodha} className="size-2/3 h-fit mt-1" />
             </div>
-            <p className=" text-sm text-gray-600">
+
+            <p className=" text-sm text-gray-600 flex justify-center md:flex-none">
               © 2010 - 2024, Zerodha Broking Ltd.All rights reserved.
             </p>
-            <div className="flex flex-row gap-4 ml-0 text-gray-600">
+
+            <div className="flex flex-row gap-4 ml-0 text-gray-600 justify-center md:justify-normal">
               <a>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -397,9 +399,9 @@ const Homepage = () => {
               <a></a>
             </div>
           </div>
-          <div className="company text-gray-600">
-            <h1 className="text-xl font-medium mb-4">Company</h1>
-            <div className="foot flex flex-col gap-2 font-medium">
+          <div className="company text-gray-600 flex flex-col items-center md:flex-none md:items-start">
+            <h1 className="text-2xl md:text-xl font-medium mb-4 ">Company</h1>
+            <div className="foot flex flex-col gap-2 font-medium items-center md:items-start">
               <h1>About</h1>
               <h1>Products </h1>
               <h1>Pricing </h1>
@@ -410,9 +412,9 @@ const Homepage = () => {
               <h1>Zerodha Cares (CSR)</h1>
             </div>
           </div>
-          <div className="Support text-gray-600">
-            <h1 className="text-xl font-medium mb-4">Support</h1>
-            <div className="foot flex flex-col gap-2 font-medium">
+          <div className="Support text-gray-600 flex flex-col items-center md:flex-none md:items-start">
+            <h1 className="text-2xl md:text-xl font-medium mb-4 ">Support</h1>
+            <div className="foot flex flex-col gap-2 font-medium items-center md:items-start">
               <h1>Contact us</h1>
               <h1>Support portal </h1>
               <h1>Z-Connect blog </h1>
@@ -424,9 +426,9 @@ const Homepage = () => {
               <h1>Status of your complaint</h1>
             </div>
           </div>
-          <div className="account text-gray-600">
-            <h1 className="text-xl font-medium mb-4">Account</h1>
-            <div className="foot flex flex-col gap-2 font-medium">
+          <div className="account text-gray-600 flex flex-col items-center md:flex-none md:items-start">
+            <h1 className="text-2xl md:text-xl font-medium mb-4 ">Account</h1>
+            <div className="foot flex flex-col gap-2 font-medium items-center md:items-start">
               <h1>Open an account</h1>
               <h1>Fund transfer</h1>
             </div>
@@ -487,7 +489,7 @@ const Homepage = () => {
             claiming to be part of Zerodha and offering such services, please
             <a>create a ticket here.</a>
           </p>
-          <div className="foot flex justify-center items-center gap-4 pb-6 pt-2 font-medium">
+          <div className="foot flex justify-center  items-center flex-wrap gap-4 pb-6 pt-2 font-medium">
             <h1>NSE</h1>
             <h1>BSE</h1>
             <h1>MCX</h1>

@@ -25,3 +25,10 @@
         color: rgb(45, 43, 43);
     }
 }
+
+.navlinks ul li {
+    @media screen and (max-width: 768px) {
+        display: none;
+        
+    }
+}
