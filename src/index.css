@@ -2,33 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .custom-marker li {
-    list-style-type: disc; 
-    margin-left: 20px; 
-    margin-bottom: 5px;
-    margin-top: 5px;
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
-.foot h1{
-    cursor: pointer;
-    &:hover{
-        color: #2164b7;
-    }
+.foot h1 {
+  cursor: pointer;
+  &:hover {
+    color: #2164b7;
+  }
 }
 
-.foot2 p a{
-    color:#2e83eb;
-    font-weight: 600;
-    cursor: pointer;
-    &:hover{
-        color: rgb(45, 43, 43);
-    }
+.foot2 p a {
+  color: #2e83eb;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    color: rgb(45, 43, 43);
+  }
 }
 
 .navlinks ul li {
-    @media screen and (max-width: 768px) {
-        display: none;
-        
-    }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.twc {
+  display: flex;
+  flex-direction: column;
+}
+
+.twc span {
+  color: #2167bd;
+  font-weight: 600;
+  font-size: medium;
+  cursor: pointer;
+}
+
+main a {
+  font-weight: 600;
 }

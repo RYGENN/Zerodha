@@ -1,13 +1,7 @@
 import image from "../../assets/ZerodhaLogo.png";
-import Menubar from "./Menubar";
-
-
 
 
 const Navbar = () => {
-  
-    
-  
   return (
     <nav className=" flex justify-between items-center p-6 shadow-sm ">
       <div className="w-1/4 ">
