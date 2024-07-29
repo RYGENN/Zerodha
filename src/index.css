@@ -41,8 +41,12 @@
   font-weight: 600;
   font-size: medium;
   cursor: pointer;
+  
 }
 
+.twc span:hover {
+  color: rgb(47, 45, 45);
+}
 main a {
   font-weight: 600;
 }
