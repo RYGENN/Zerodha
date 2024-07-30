@@ -10,11 +10,12 @@ import Navbar from "./ui/Navbar";
 
 const Homepage = () => {
   return (
-    <div>
+    <div className=" "> 
+      <div className="fixed top-0 bg-white w-full">
       <Navbar/>
-
-      <main>
-        <section className="landing  flex flex-col justify-center items-center mb-28">
+      </div>
+      <main className=" mt-20">
+        <section className="landing  flex flex-col justify-center items-center mb-28 ">
           <div className="w-2/3 md:w-3/6 h-fit md:m-10 ">
             <img src={landing}></img>
           </div>
