@@ -117,3 +117,15 @@
 main a {
   font-weight: 600;
 }
+
+ /* sign up page */
+
+ .signPage span{
+  color: #2167bd;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    color: rgb(47, 45, 45);
+  }
+ }
+

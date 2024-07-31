@@ -6,16 +6,22 @@ import kiteconnect from "../../assets/kiteconnect.svg";
 import varsityLogo from "../../assets/varsityLogo.png";
 import tqna from "../../assets/tqna.png";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
   const [isTransformed, setIsTransformed] = useState(false);
+  const navigate = useNavigate();
+
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
     // setIsTransformed(!isTransformed);
   };
  
+  function goToSignPage (){
+     navigate("/signup")
+  }
 
   return (
     <nav className="flex" >
@@ -26,7 +32,7 @@ const Navbar = () => {
         <div className="navlinks w-2/3">
           <ul className=" text-neutral-500 flex  justify-end gap-4 md:gap-8 lg:gap-10  items-center">
             <li>
-              <button className="hover:text-sky-700 ">Signup</button>
+              <button className="hover:text-sky-700" onClick={goToSignPage}>Signup</button>
             </li>
             <li>
               <button className="hover:text-sky-700">About</button>
