@@ -38,7 +38,7 @@ const Signpage = () => {
             </div>
 
         </div>
-        <section className=" text-xs text-neutral-500">
+        <section className=" text-xs text-neutral-500 mb-28">
             <div className=" px-32 text-center flex flex-col gap-5 my-10">
                 <p>I authorise Zerodha to contact me even if my number is registered on DND. I authorise Zerodha to fetch my KYC information from the C-KYC registry with my PAN. Please visit <span>this article</span> to know more</p>
                 <p>If you are looking to open a HUF, Corporate, Partnership, or NRI account, you have to use the <span>offline forms</span>. For help,<span>click here</span>.</p>

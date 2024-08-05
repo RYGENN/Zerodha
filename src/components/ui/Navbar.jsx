@@ -19,29 +19,30 @@ const Navbar = () => {
     // setIsTransformed(!isTransformed);
   };
  
-  function goToSignPage (){
-     navigate("/signup")
+  function goToPage (path){
+     navigate(path)
   }
+ 
 
   return (
     <nav className="flex" >
       <div className="navbar w-full flex justify-between items-center p-6 ">
         <div className="w-1/4 ">
-          <img src={image} alt="logo" className="w-1/2 pl-3" />
+          <img src={image} alt="logo" className="w-1/2 pl-3 cursor-pointer" onClick={() => goToPage("/")} />
         </div>
         <div className="navlinks w-2/3">
           <ul className=" text-neutral-500 flex  justify-end gap-4 md:gap-8 lg:gap-10  items-center">
             <li>
-              <button className="hover:text-sky-700" onClick={goToSignPage}>Signup</button>
+              <button className="hover:text-sky-700" onClick={() =>goToPage('/signup')}>Signup</button>
             </li>
             <li>
-              <button className="hover:text-sky-700">About</button>
+              <button className="hover:text-sky-700" onClick={() =>goToPage("/about")}>About</button>
             </li>
             <li>
-              <button className="hover:text-sky-700">Products</button>
+              <button className="hover:text-sky-700" onClick={() =>goToPage("/products")} >Products</button>
             </li>
             <li>
-              <button className="hover:text-sky-700">Pricing</button>
+              <button className="hover:text-sky-700" onClick={() =>goToPage("/pricing")}>Pricing</button>
             </li>
             <li>
               <button className="hover:text-sky-700">Support</button>
@@ -54,7 +55,7 @@ const Navbar = () => {
                 stroke-width="1.5"
                 stroke="black"
                 className="size-6 cursor-pointer mr-5"
-                onClick={toggleMenu}
+                onClick={() => toggleMenu()}
               >
                 <path
                   stroke-linecap="round"
@@ -137,7 +138,7 @@ const Navbar = () => {
           height="30"
           viewBox="0 0 24 24"
           className="relative right-10 top-6 z-999 bg-white cursor-pointer "
-          onClick={toggleMenu}
+          onClick={() => toggleMenu()}
         >
           <path d="M 19.990234 2.9863281 A 1.0001 1.0001 0 0 0 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 A 1.0001 1.0001 0 0 0 3.9902344 2.9902344 A 1.0001 1.0001 0 0 0 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 A 1.0001 1.0001 0 1 0 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 A 1.0001 1.0001 0 1 0 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 A 1.0001 1.0001 0 0 0 19.990234 2.9863281 z"></path>
         </svg>

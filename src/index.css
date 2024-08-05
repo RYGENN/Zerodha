@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body{
+  font-family: "Inter",serif;
+  background-color: white;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
 .navbar{
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
