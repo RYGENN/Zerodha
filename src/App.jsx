@@ -6,7 +6,7 @@ import Aboutpage from './components/Aboutpage'
 import Signpage from './components/Signpage'
 import Pricingpage from './components/Pricingpage'
 import Productpage from './components/Productpage'
-
+// wth
 function App() {
 
   const appRouter = createBrowserRouter([
