@@ -2,6 +2,7 @@ import Navbar from "./ui/Navbar";
 import Footer from "./ui/Footer";
 import nithinKamath from "../assets/nithinKamath.jpg";
 
+
 const Aboutpage = () => {
   return (
     <div>
