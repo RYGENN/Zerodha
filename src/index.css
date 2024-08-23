@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-// css are going to do good
+
 body{
   font-family: "Inter",serif;
   background-color: white;
